@@ -86,7 +86,7 @@ a:hover{
   color: white;
   padding: 5px 10px;
   text-decoration: none;
-    color: blanchedalmond;
+  color: blanchedalmond;
 }
 .page-header a:hover{
   color:white;
@@ -129,10 +129,11 @@ a:hover{
   .page-header{
     background-color: #35477D;
     /* padding: 50vh 0 ; */
-    text-align: center;
+    
 }
 .main-navigation ul li{
     display: inline-block;
+    text-align: right;
 }
 .footer-navigation ul li{
     display: inline-block;
@@ -165,14 +166,18 @@ a:hover{
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
-  
+    .page-header  h1 {
+    }
   }
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
   .portfolio-list li{
     flex-basis: 50%;
-  };
+    }
+  .page-header  h1 {
+    }
+
   }
   
   /* Large devices (desktops, 992px and up) */
