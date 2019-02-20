@@ -6,6 +6,10 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  img{
+    max-width: 100%;
+  }
   
   /* ---- typography ---- */
   
@@ -18,7 +22,7 @@ html {
   }
  
 a{
-    color: tomato;
+    color: blanchedalmond;
 }
 a:hover{
     color: blueviolet;
@@ -58,18 +62,64 @@ a:hover{
   }
   
   /* ---- components ---- */
-  img:hover{
-    opacity: 0.7; 
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
-}
 
 /* header */
-
-.page-header h1{
-    font-size: 1em;
+.page-header{
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
+.page-header h1{
+    font-size: 2em;
+    font-family: 'Josefin Slab', serif;
+    /* font-family: 'Vidaloka', serif; */
+    color: blanchedalmond;
+}
+.page-header a{
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+    color: blanchedalmond;
+}
+.page-header a:hover{
+  color:white;
+}
+  /* banner */
+  .banner{
+    height: 100vh;
+    background: #35477D;
+    color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner h1{
+    font-family: 'Vidaloka', serif;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  .banner-logo {
+    width: 300px;
+  }
+  /* portfolio section */
+  .flex-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-list li{
+    flex-basis: 100%;
+  }
   
   /* ---- section ---- */
   
@@ -78,7 +128,7 @@ a:hover{
   }
   .page-header{
     background-color: #35477D;
-    padding: 50vh 0 ;
+    /* padding: 50vh 0 ; */
     text-align: center;
 }
 .main-navigation ul li{
@@ -106,7 +156,12 @@ a:hover{
  section:nth-of-type(even){
      background: #ececec;
  }
-
+.img-hover:hover{
+  opacity: 0.7; 
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
@@ -115,16 +170,15 @@ a:hover{
   
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-  
+  .portfolio-list li{
+    flex-basis: 50%;
+  };
   }
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
       .container{
           margin: 0 auto;
-      }
-      .page-header h1{
-          font-size: 3em;
       }
   }
   

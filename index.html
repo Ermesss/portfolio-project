@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Vidaloka" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/reset.css"/>
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
@@ -12,21 +13,29 @@
 <body id="top">
     <!--page header-->
     <header class="page-header">
-        <h1>Ermanno Fissore portfolio</h1>
+        <h1>Ermanno Fissore UX/UI Designer</h1>
         <nav class="main-navigation">
-            <ul>
+            <ul class="menu" id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#links">Links</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="button_container" id="menu_trigger">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                  </div>
         </nav>
     </header>
     <!--main content-->
     <main>
 <!-- start hero section -->
-        <section id="home" class="container">
-            <h1>Ermanno's Portfolio</h1>
+        <section id="home" class="banner">
+            <div class="banner-logo">
+                <img src="assets/images/LogoEF.png" alt="LogoEF">
+                <h1>Ermanno Fissore Portfolio</h1>
+            </div>
         </section>
         <!-- start intro section -->
         <section>
@@ -39,32 +48,32 @@
             <div class="container">
                 <h3>My Works</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro delectus provident cupiditate earum. Iste, eius optio? Recusandae aspernatur officia similique accusamus odit, vel illum architecto, officiis assumenda praesentium eligendi inventore.</p>
-                <ul class="inline-list portfolio-list">
+                <ul class="flex-list portfolio-list">
                     <li>
                         <a href="#">
                             <h2>Work 1</h2>
-                        <img src="https://via.placeholder.com/150" alt="Portfolio Image">
+                        <img class="img-hover" src="https://via.placeholder.com/150" alt="Portfolio Image">
                         <p>Lorem ipsum dolor sit, amet.</p>
                     </a>
                     </li>
                     <li>
                             <a href="#">
                                 <h2>Work 2</h2>
-                            <img src="https://via.placeholder.com/150" alt="Portfolio Image">
+                            <img class="img-hover" src="https://via.placeholder.com/150" alt="Portfolio Image">
                             <p>Lorem ipsum dolor sit, amet.</p>
                         </a>
                         </li>
                         <li>
                                 <a href="#">
                                     <h2>Work 3</h2>
-                                <img src="https://via.placeholder.com/150" alt="Portfolio Image">
+                                <img class="img-hover" src="https://via.placeholder.com/150" alt="Portfolio Image">
                                 <p>Lorem ipsum dolor sit, amet.</p>
                             </a>
                             </li>
                             <li>
                                     <a href="#">
                                         <h2>Work 4</h2>
-                                    <img src="https://via.placeholder.com/150" alt="Portfolio Image">
+                                    <img class="img-hover" src="https://via.placeholder.com/150" alt="Portfolio Image">
                                     <p>Lorem ipsum dolor sit, amet .<p>
                                 </a>
                                 </li>
