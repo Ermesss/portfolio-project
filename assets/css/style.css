@@ -79,6 +79,7 @@ a:hover{
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 .page-header h1{
     font-size: 2em;
@@ -135,12 +136,27 @@ a:hover{
     /* padding: 50vh 0 ; */
     
 }
-.main-navigation ul li{
+.main-navigation ul li {
     display: inline-block;
     text-align: right;
 }
-.footer-navigation ul li{
+.footer-navigation ul li {
     display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-navigation p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-navigation ul{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
 }
 .inline-list li{
     display: inline-block;
